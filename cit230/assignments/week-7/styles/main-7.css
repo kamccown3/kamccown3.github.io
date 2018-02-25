@@ -1,0 +1,70 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: Alegreya, serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {margin: 0;}
+header img {margin: 0; font-weight: normal;}
+header figure.logo {float: left;}
+header .subheading {}
+
+nav {}
+nav button { 
+    margin: .2rem 2;
+    border: none;
+    font-size: 1.6rem;
+    background-color: transparent;
+    }
+nav ul { list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {}
+nav ul li a {
+    display: flex;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+nav ul.hidde {display: none;}
+
+main {}
+main h2 {text-align: center}
+main figure.hero { width: 100%; margin: 0; }
+main figure.hero img { width: 100%; }
+main figure.hero figcaption {text-align: center;}
+forecast {display: none; text-align: center;}
+
+section {}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: ???; /* fill the page in the small/phone view */
+  margin: ???;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 400px;
+}
+    
+}
+
+footer {}
+footer aside {text-align: center; background-color: lightblue}
+footer>p {background-color: deepskyblue} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+.clearfix: after {
+    
+}
