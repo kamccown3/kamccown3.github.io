@@ -1,16 +1,71 @@
 @media only screen and (min-width: 37.5em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-        li {display: inline;}
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+        }
     }
-  
-  nav button { display:none; }  /* hamburger button does not need to be shown */
-  
-  section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
+    button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    .forecast {
+        display: block;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    /* show the 10-day forecast with the medium view and up */
+    .town-article img {
+        width: 62.666%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    li a.active {
+        color: white;
+        background-color: #4CAF50;
+    }
+    
+    article {
+    display: flex;
+    flex-direction: row;
+}
+    /* responsive images */
 }
