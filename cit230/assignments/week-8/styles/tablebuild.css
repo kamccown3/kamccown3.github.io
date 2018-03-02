@@ -24,15 +24,16 @@ td {
     text-align: center;
 }
 
-tr:nth-child(1) td {
-    background-color: #628ca6;
-}
 tr:nth-child(even) td {
     background-color: #e7f0ed;
 }
 
 tr:nth-child(odd) td {
     background-color: #e7ffed;
+}
+
+tr:nth-child(1) td {
+    background-color: #7fb9c2;
 }
 
 tfoot {
