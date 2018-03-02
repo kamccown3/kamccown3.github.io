@@ -8,19 +8,15 @@ table {
     margin-top: 50px;
 }
 
-table,
-caption,
-th,
-td {
+table, caption, th, td {
     border: .5px solid #BEBEBE;
     border-collapse: collapse;
     text-align: center;
     padding: 6px 10px;
 }
 
-table,
-caption {
-    box-shadow: 8px 8px 15px rgba(98, 140, 166, 1);
+table, caption {
+    box-shadow: 8px 8px 15px #628ca6;
 }
 
 th {
