@@ -53,22 +53,11 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin: ???;
 }
 
-.grid-container {
+.wrapper {
     display: grid;
-    grid-template-columns: 100%;
-    background-color:  antiquewhite;
-    padding: 10px;
+    grid-template-columns: 400px;
 }
-
-.grid-container img{
-    width: 100%;
-}
-
-.grid-item {
-    background-color: azure;
-    border: 1px solid;
-    text-align: center;
-    padding: 5px;
+    
 }
 
 footer {}
