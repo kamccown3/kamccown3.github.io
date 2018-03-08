@@ -20,14 +20,16 @@
 </head>
 
 <body>
-
+<div class="content">
     <header>
         <div>
-            <img src="images/weather-logo.gif" alt="The site logo" width="20%" height="">
+            <img src="images/weather-logo.gif" alt="The site logo">
         </div>
         <div>
             <h1>Franklin</h1>
-            <div class="subheading">Keeping our citizens and visitors prepared for whatever the day brings.</div>
+            <p class="subheading">Keeping our citizens and visitors prepared for whatever the day brings.</p>
+        </div>
+        <div>
             <button onclick="toggleNavMenu()">&#9776;</button>
         </div>
     </header>
@@ -58,7 +60,7 @@
             <div class="current">
                 Sunny
                 <picture>
-                    <img src="images/sun.jpg" alt="sunny skies" width="50%" height="auto">
+                    <img src="images/sun.jpg" alt="sunny skies">
                 </picture>
             </div>
             <div class="conditions">
@@ -104,10 +106,14 @@
         <article>
             <div>
                 <h3>Franklin Breaks Record</h3>
-                <p>The town of Franklin had our largest farmers market on record, with 74 different vendors attending, and approxamitely 2000 visitors! We are excited to see what the next farmers market brings to our town.</p>
             </div>
-            <div class="town-article">
-                <img src="images/farmers-market.jpg" alt=".10em" width="" height=".1em">
+            <div class="articlediv">
+                <div>
+                    <p>The town of Franklin had our largest farmers market on record, with 74 different vendors attending, and approxamitely 2000 visitors! We are excited to see what the next farmers market brings to our town.</p>
+                </div>
+                <div class="town-article">
+                    <img src="images/farmers-market.jpg" alt=".10em">
+                </div>
             </div>
         </article>
 
@@ -122,7 +128,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-
+    </div>
 </body>
 
 </html>

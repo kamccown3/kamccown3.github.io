@@ -11,6 +11,11 @@ body {
     font-family: Alegreya, serif;
 }
 
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
 header,
 nav,
 main,
@@ -21,12 +26,16 @@ footer {
 
 header {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-header h1 {
+header div h1 {
+    margin-top: 3.5em;
+    line-height: 0;
 }
 
-header img {
-    float: right;
+header div img {
+    width: 100%;
 }
 
 header .subheading {}
@@ -66,11 +75,15 @@ main figure img {
 
 section {}
 
-.town-article img {
+.town-article img{
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%;
+    width: 97%;
     margin: 10px;
     /* fill the page in the small/phone view */
+}
+
+.current img{
+    width: 40%;
 }
 
 article {
@@ -82,11 +95,11 @@ footer {}
 
 footer aside {
     text-align: center;
-    background-color: lightblue
+    background-color: lightblue;
 }
 
 footer > p {
-    background-color: deepskyblue
+    background-color: deepskyblue;
 }
 
 /* This structure refers to p elements that are direct children of the footer element */
