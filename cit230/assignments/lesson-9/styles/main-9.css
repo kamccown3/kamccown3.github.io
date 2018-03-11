@@ -1,0 +1,161 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: Alegreya, serif;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header div h1 {
+    margin-top: 3.5em;
+    line-height: 0;
+}
+
+header div img {
+    width: 100%;
+}
+
+header .subheading {}
+
+nav {}
+
+nav button {}
+
+nav ul {}
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {}
+
+main h2 {
+    text-align: center
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+.forecast {
+    display: none;
+}
+
+section {}
+
+.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 97%;
+    margin: 10px;
+    /* fill the page in the small/phone view */
+}
+
+.current img {
+    width: 40%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {}
+
+footer aside {
+    text-align: center;
+    background-color: lightblue;
+}
+
+footer > p {
+    background-color: deepskyblue;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #ddd;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 400px;
+}
