@@ -1,7 +1,7 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     header div h1 {
-        margin-top: 2.5em;
+        margin-top: 1.5em;
         font-size: 60px;
     }
 
@@ -18,7 +18,7 @@
         }
     }
 
-    button {
+    .hamburger {
         display: none;
     }
     /* hamburger button does not need to be shown */
@@ -51,6 +51,11 @@
         background-color: #f3f3f3;
     }
 
+
+    .navigation li {
+        display: block;
+    }
+
     li {
         float: left;
     }
@@ -81,17 +86,16 @@
     .current img {
         width: 30%;
     }
-    
-    .articlediv{
+
+    .articlediv {
         width: 100%;
-        display:  flex;
+        display: flex;
         flex-direction: row;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     /* responsive images */
-}
-
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 400px 400px;
 }

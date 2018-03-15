@@ -31,7 +31,7 @@ weatherObject.onload = function () {
 
 var weatherTown = new XMLHttpRequest();
 
-weatherTown.open('GET', 'http://api.wunderground.com/api/664221042c7bea65/conditions/q/MN/Franklin.json', true);
+weatherTown.open('GET', 'https://api.wunderground.com/api/664221042c7bea65/conditions/q/MN/Franklin.json', true);
 weatherTown.responseType = "json";
 weatherTown.send();
 

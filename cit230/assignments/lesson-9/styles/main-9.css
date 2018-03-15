@@ -28,11 +28,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: lightblue;
 }
 
 header div h1 {
-    margin-top: 3.5em;
-    line-height: 0;
+    margin-top: 1.5em;
 }
 
 header div img {
@@ -42,8 +42,6 @@ header div img {
 header .subheading {}
 
 nav {}
-
-nav button {}
 
 nav ul {}
 
@@ -154,8 +152,15 @@ li a.active {
     background-color: #4CAF50;
 }
 
-
-.wrapper {
+.grid-container{
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.grid-item{
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
 }
