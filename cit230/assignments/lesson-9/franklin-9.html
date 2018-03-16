@@ -1,129 +1,139 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franklin Weather Station</title>
-    <meta name="author" content="Kelli McCown">
-    <meta name="description" content="Franklin Weather Page">
-    <!-- external style references in the proper cascading order -->
-    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-9.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="styles/medium-9.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="styles/large-9.css" rel="stylesheet">
-    <!-- large/wide/desktop views -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Franklin Weather Station</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="Franklin Weather Page">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main-9.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium-9.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large-9.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
 </head>
 
 <body>
-    <div class="content">
-        <header>
-            <div>
-                <img src="images/weather-logo.gif" alt="The site logo">
-            </div>
-            <div>
-                <h1>Weather Station</h1>
-                <p class="subheading">Keeping our citizens and visitors prepared for whatever the day brings.</p>
-            </div>         
-            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-        </header>
-        <!-- site navigation use placeholder references -->
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="franklin-9.html">Franklin</a></li>
-                <li><a href="#">Greenville</a></li>
-                <li><a href="#">Springfield</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-9.html">Gallery</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h2>The City of Franklin</h2>
-            <figure>
-                <img src="images/downtown.jpeg" alt="downtown buildings" width=100%>
-            </figure>
-            <section>
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p>High:</p>
-                    <p>Low:</p>
-                </div>
-                <div class="current">
-                    Sunny
-                    <picture>
-                        <img src="images/sun.jpg" alt="sunny skies">
-                    </picture>
-                </div>
-                <div class="conditions">
-                    <p>Precipitation:</p>
-                    <p>Wind Speed:</p>
-                </div>
-            </section>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/weather-logo.gif" alt="The site logo">
+			</div>
+			<div>
+				<h1>Weather Station</h1>
+				<p class="subheading">Keeping our citizens and visitors prepared for whatever the day brings.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="franklin-9.html">Franklin</a></li>
+				<li><a href="#">Greenville</a></li>
+				<li><a href="#">Springfield</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery-9.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>The City of Franklin</h2>
+			<figure>
+				<img src="images/downtown.jpeg" alt="downtown buildings" width=100%>
+			</figure>
+			<!--<section>
+				<h3>Weather Summary</h3>
+				<div class="highlow">
+					<p>High: <span id="currentTemp"></span>&deg;</p>
+					<p>Low:</p>
+				</div>
+				<div class="current">
+					Sunny
+					<picture>
+						<img src="images/sun.jpg" alt="sunny skies">
+					</picture>
+				</div>
+				<div class="conditions">
+					<p>Precipitation:</p>
+					<p>Wind Speed:</p>
+				</div>
+			</section>-->
+			<section id="town">
+				<h1>Weather Conditions for <span id="place"> City, State</span></h1>
+				<p>Current conditions are: <span id="currentCond"></span></p>
+				<img src "" id="currentConditions">
+				<p>Current Temperature is: <span id="currentTemp"></span>&deg;</p>
+				<p>Windspeed is <span id="windSpeed"></span> mph</p>
+				<p>The current forecast is: <span id="forecastW"></span> </p>
+			</section>
 
-            <section class="forecast">
-                <h3>10 Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+			<section class="forecast">
+				<h3>10 Day Forecast</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Day 1</th>
+							<th>Day 2</th>
+							<th>Day 3</th>
+							<th>Day 4</th>
+							<th>Day 5</th>
+							<th>Day 6</th>
+							<th>Day 7</th>
+							<th>Day 8</th>
+							<th>Day 9</th>
+							<th>Day 10</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>89&deg;F</td>
+							<td>87&deg;F</td>
+							<td>78&deg;F</td>
+							<td>75&deg;F</td>
+							<td>72&deg;F</td>
+							<td>72&deg;F</td>
+							<td>79&deg;F</td>
+							<td>83&deg;F</td>
+							<td>85&deg;F</td>
+							<td>89&deg;F</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 
-            <article>
-                <div>
-                    <h3>Franklin Breaks Record</h3>
-                </div>
-                <div class="articlediv">
-                    <div>
-                        <p>The town of Franklin had our largest farmers market on record, with 74 different vendors attending, and approxamitely 2000 visitors! We are excited to see what the next farmers market brings to our town.</p>
-                    </div>
-                    <div class="town-article">
-                        <img src="images/farmers-market.jpg" alt=".10em">
-                    </div>
-                </div>
-            </article>
+			<article>
+				<div>
+					<h3>Franklin Breaks Record</h3>
+				</div>
+				<div class="articlediv">
+					<div>
+						<p>The town of Franklin had our largest farmers market on record, with 74 different vendors attending, and approxamitely 2000 visitors! We are excited to see what the next farmers market brings to our town.</p>
+					</div>
+					<div class="town-article">
+						<img src="images/farmers-market.jpg" alt=".10em">
+					</div>
+				</div>
+			</article>
 
-        </main>
+		</main>
 
-        <footer>
-            <aside>
-                Franklin Weather Station <br> 123 Main Street. <br> Franklin, MU 83454 <br> (123) 999-9999<br> franklinweatherstation@gmail.com
-            </aside>
-            <p class="footer-bar">&copy;2017 All Rights Reserved | Franklin Weather Station | <span id="currentdate">Current Date Placeholder</span></p>
-        </footer>
+		<footer>
+			<aside>
+				Franklin Weather Station <br> 123 Main Street. <br> Franklin, MU 83454 <br> (123) 999-9999<br> franklinweatherstation@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2017 All Rights Reserved | Franklin Weather Station | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
 
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script>
-    </div>
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+		<script src="scripts/wu-weather.js"></script>
+	</div>
 </body>
 
 </html>
