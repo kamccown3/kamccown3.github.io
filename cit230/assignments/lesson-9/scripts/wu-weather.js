@@ -9,7 +9,10 @@ weatherObject.send();
 weatherObject.onload = function () {
 
     console.log(weatherObject.response);
-    var output = document.getElementById("town");
+    var output = document.getElementById("indexTowns");
+	if (!output) {
+		return;
+	}
 
     weatherObject.response.towns.forEach(function (town) {
 
@@ -27,7 +30,6 @@ weatherObject.onload = function () {
     })
 
 }
-
 
 var weatherTown = new XMLHttpRequest();
 
@@ -54,4 +56,22 @@ weatherTownF.send();
 weatherTownF.onload = function () {
     var weatherInfoF = JSON.parse(weatherTownF.responseText);
 	  document.getElementById('forecastW').innerHTML = weatherInfoF.forecast.txt_forecast.forecastday["0"].fcttext;
+}
+function getWeatherData(source) {
+  var request = new XMLHttpRequest();
+
+  request.open('GET', source, true);
+  request.send();
+
+  request.onload = function() {
+    var weatherInfo = JSON.parse(request.responseText);
+
+    document.getElementById('high-temp').innerHTML =  weatherInfo.current_observation.temp_f;
+    document.getElementById('low-temp').innerHTML = weatherInfo.current_observation.temp_f; // Change later!
+    document.getElementById('current-conditions').innerHTML = weatherInfo.current_observation.weather;
+    document.getElementById('precipitation').innerHTML = weatherInfo.current_observation.precip_today_in;
+    document.getElementById('wind-speed').innerHTML = weatherInfo.current_observation.wind_mph;
+    document.getElementById('wind-chill').innerHTML = weatherInfo.current_observation.windchill_f;
+	  document.getElementById('icon').src = weatherInfo.current_observation.icon_url;
+  };
 }

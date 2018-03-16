@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Franklin Weather Station</title>
+	<title>Springfield Weather Station</title>
 	<meta name="author" content="Kelli McCown">
 	<meta name="description" content="Franklin Weather Page">
 	<!-- external style references in the proper cascading order -->
@@ -35,15 +35,15 @@
 		<nav>
 			<ul class="navigation">
 				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="franklin-9.html">Franklin</a></li>
+				<li><a href="franklin-9.html">Franklin</a></li>
 				<li><a href="greenville.html">Greenville</a></li>
-				<li><a href="springfield.html">Springfield</a></li>
+				<li class="active"><a href="springfield.html">Springfield</a></li>
 				<li><a href="stormcenter.html">Storm Center</a></li>
 				<li><a href="gallery-9.html">Gallery</a></li>
 			</ul>
 		</nav>
 		<main>
-			<h2>The City of Franklin</h2>
+			<h2>The City of Springfield</h2>
 			<figure>
 				<img src="images/downtown.jpeg" alt="downtown buildings" width=100%>
 			</figure>
@@ -66,7 +66,6 @@
 				</div>
 
 			</section>
-
 			<section class="forecast">
 				<h3>10 Day Forecast</h3>
 				<table>
@@ -128,7 +127,7 @@
 		<script src="scripts/currentdate.js"></script>
 		<script src="scripts/wu-weather.js"></script>
 		<script>
-			getWeatherData('https://api.wunderground.com/api/664221042c7bea65/conditions/q/MN/Franklin.json');
+			getWeatherData('https://api.wunderground.com/api/664221042c7bea65/conditions/q/MN/Greenville.json');
 		</script>
 	</div>
 </body>

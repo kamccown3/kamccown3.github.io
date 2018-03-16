@@ -43,6 +43,18 @@ header .subheading {}
 
 nav {}
 
+.active{
+	background-color: darkgray;
+}
+
+#indexTowns {
+	display: flex;
+}
+#indexTowns article {
+	flex: 1;
+	border: 2px solid black;
+}
+
 nav ul {}
 
 nav ul li {}
