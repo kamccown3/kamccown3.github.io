@@ -6,18 +6,46 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!--<script src="jquery-3.3.1.min.js"></script>-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
+	<!--<script>
 	$(function() {
 		alert('Hello jQuery!!');
 	})
+	</script>-->
+	<script>
+		window.onload = function() {
+			var element = document.getElementById('alcoveLogo');
+			element.style.opacity = 0.2;
+		}
+	</script>
+	<script>
+		window.onload = function() {
+			var elements = document.getElementsByClassName('servicesBtn');
+			for (var i = 0; i < elements.length; i++) {
+				if (i % 2 == 0) {
+					elements[i].style.color = 'rgb(0, 106, 255)';
+				}
+			}
+		}
+	</script>
+	<script>
+		window.onload = function() {
+			var elements = document.getElementsByTagName('h2');
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.borderColor = 'rgb(255, 0, 0)';
+				elements[i].style.borderWidth = '2px;
+				elements[i].style.borderStyle = 'solid';
+				elements[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+			}
+		}
 	</script>
 </head>
+
 <body>
-<!-- Master Container Div -->
+	<!-- Master Container Div -->
 	<div class="container">
-	<!-- Header Div containing the Logo & Navigation Links -->
+		<!-- Header Div containing the Logo & Navigation Links -->
 		<div class="header">
-			<div class="logo"></div>
+			<div class="logo" id="alcoveLogo"></div>
 			<div class="navbar">
 				<ul class="navigation">
 					<li><a href="#">About Us</a></li>
