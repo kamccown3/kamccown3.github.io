@@ -10,7 +10,7 @@
 	$(function() {
 		alert('Hello jQuery!!');
 	})
-	</script>-->
+	</script>
 	<script>
 		window.onload = function() {
 			var element = document.getElementById('alcoveLogo');
@@ -37,6 +37,73 @@
 				elements[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
 			}
 		}
+	</script>
+	<script>
+		$(function() {
+				var element = document.querySelector(".navigation > li:nth-child(3)>a");
+				element.style.color = 'rgb(255, 0, 0)';
+			})
+	</script>
+		<script>
+		$(function() {
+				var elementsTwo = document.querySelectorAll(".navigation > li:nth-child(even)>a");
+			for (var i = 0; i < elementsTwo.length; i++) {
+				elementsTwo[i].style.color = 'rgb(255, 0, 0)';
+			})
+	</script>-->
+	<!--<script>
+		$(function() {
+			$('#alcoveLogo').css('opacity', 0.4);
+			$('.servicesBtn').css('color', '#FFF');
+			$('button').css('border', '1px solid red');
+			$('h2').css('border', '1px solid red');
+			$('input[name="nameVal"]').css('border', '1px solid red');
+			$('input[name!="phoneNum"]').css('border', '1px solid red');
+			$('input[name*="Num"]').css('border', '1px solid red');
+			$('input[name$="Val"]').css('border', '1px solid red');
+		})
+	</script>-->
+	<!--<script>
+		$(function() {
+			//$('#alcoveLogo').next().css('background-color','rgba(255, 0, 0, 0.2');
+			//$('.box1').nextAll().css('background-color','rgba(255, 0, 0, 0.2');
+			//$('.header').children().css('background-color','rgba(255, 0, 0, 0.2');
+			//$('.navigation > li:eq(2)').parent().css('opacity','0.3');
+			$('.servicesBtn').closest('div').css('background-color','rgba(255, 0, 0, 0.2');
+			})
+	</script>-->
+	<!--<script>
+		//Lesson 4 Step 1
+		$(function() {
+			 // jQuery Code goes here
+			
+			var toggleStyle = function() {
+					
+					var logo = $('input[type="text"]'); 
+					if (logo.css('background-color') === 'rgb(255, 0, 0)') {
+						logo.css('background-color', 'rgb(255, 255, 255)'); 
+					} else {
+						logo.css('background-color', 'rgb(255, 0, 0)'); 
+					} 
+				} 
+				$('#ReqAQuoteBtn').click(toggleStyle); 
+		})
+	</script>-->
+	<script>
+		//Lesson 4, Step 2
+		$(function() {
+			//$('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+			//$("<li><strong>This is brand new !!</strong></li>").prependTo(".coreValues");
+			var nameVal = $('input[name="nameVal"]');
+
+			function FillEmpty() {
+				if (nameVal.val() == '') {
+					nameVal.val('John Doe');
+				}
+			}
+			$('#ReqAQuoteBtn').click(FillEmpty);
+
+		})
 	</script>
 </head>
 
@@ -67,17 +134,17 @@
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Full Name</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="nameVal"></div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>E-Mail</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="emailVal"></div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Phone</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="phoneNum"></div>
 					</div>
 
 					<div class="FormFieldHolder">
@@ -93,7 +160,7 @@
 					<h2>The Values that Drive Us</h2>
 					<hr>
 					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers. <br><br>Our core values : <br><br></p>
-					<ul>
+					<ul class="coreValues">
 						<li>Innovative Ideas</li>
 						<li>Ownership</li>
 						<li>Frugality</li>
@@ -133,6 +200,17 @@
 		<div class="footer">
 			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
 		</div>
+		<footer>
+			<br>
+					<ul>
+				<li><a href="advanced-filters-begin.html">Advanced Filters Begin</a></li>
+				<li><a href="animated-medu-begin.html">Animated Menu Begin</a></li>
+				<li><a href="basic-filters-begin.html">Basic Filters Begin</a></li>
+				<li><a href="drop-down-menu-begin.html">Drop Down Menu Begin</a></li>
+				<li><a href="fruit-basket-begin.html">Fruit Basket Begin</a></li>
+				<li><a href="toggle-button-begin.html">Toggle Button Begin</a></li>
+			</ul>
+		</footer>
 	</div>
 </body>
 </html>
