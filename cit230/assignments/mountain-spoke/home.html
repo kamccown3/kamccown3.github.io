@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Mountain Spoke</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="The Mountain Spoke">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/final-logo.jpg" alt="The site logo">
+			</div>
+			<div>
+				<h1>The Mountain Spoke</h1>
+				<p class="subheading">Serving bicyclists in Bozeman, MT.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="sales.html">Sales</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="adventure-tours.html">Adventure Tours</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+		<article>
+			<img id="home-page" src="images/Bicycles-ready-for-use.jpg" img width="90%">
+			<img src="images/racing.jpg" img width="90%">
+			<p>Come visit us in beautiful Bozeman, Montana!</p>
+			</article>
+		</main>
+
+		<footer>
+			<aside>
+				The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT <br> (123) 999-9999<br> themountainspoke@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+		<script src="scripts/wu-weather.js"></script>
+	</div>
+</body>
+
+</html>

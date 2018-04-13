@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adventure Tours</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="The Mountain Spoke">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/final-logo.jpg" alt="The site logo">
+			</div>
+			<div>
+				<h1>The Mountain Spoke</h1>
+				<p class="subheading">Serving bicyclists in Bozeman, MT.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="sales.html">Sales</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li class="active"><a href="adventure-tours.html">Adventure Tours</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Adventure Tours</h2>
+			<div class="grid-container">
+				<figure class="grid-item">
+					<img src="images/madison-river.jpg">
+					<figcaption>Madison River</figcaption>
+					<p>Ride along the beautiful Madison River</p>
+					<p>Length: 3 hours</p>
+					<p>Skill: Beginner</p>
+					<p>Cost: $150</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/bozeman-sky.jpg">
+					<figcaption>Rural Bozeman</figcaption>
+					<p>Ride through the Bozeman hills and see the historic views.</p>
+					<p>Length: 6 hours</p>
+					<p>Skill: Beginner</p>
+					<p>Cost: $270</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/historic-bozeman.jpg">
+					<figcaption>Historic Bozeman</figcaption>
+					<p>Ride through Historic Bozeman and see all the antique buildings.</p>
+					<p>Length: 3 hours</p>
+					<p>Skill: Beginner</p>
+					<p>Cost: $150</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/bison.jpg">
+					<figcaption>Yellowstone</figcaption>
+					<p>Ride from Bozeman to Yellowstone, and check out all of the amazing wildlife along the way</p>
+					<p>Length: 10 hours</p>
+					<p>Skill: Advanced</p>
+					<p>Cost: $500</p>
+				</figure>
+
+
+				<figure class="grid-item">
+					<img src="images/music.jpg">
+					<figcaption>Music</figcaption>
+					<p>Musical tour of Bozeman. Bike tour of the music concerts in Bozeman.</p>
+					<p>Length: 12 hours</p>
+					<p>Skill: Intermediate</p>
+					<p>Cost: $600</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/glacier-national-park.jpg">
+					<figcaption>Glacier National Park</figcaption>
+					<p>Cycle from Bozeman to Glacier National Park.</p>
+					<p>Length: 14 hours</p>
+					<p>Skill: Advanced</p>
+					<p>Cost: $550</p>
+				</figure>
+			</div>
+		</main>
+
+		<footer>
+			<aside>
+				The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT <br> (123) 999-9999<br> themountainspoke@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+</body>
+</html>

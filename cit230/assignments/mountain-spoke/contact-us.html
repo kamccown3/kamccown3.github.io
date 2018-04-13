@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us!</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="The Mountain Spoke">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/final-logo.jpg" alt="The site logo">
+			</div>
+			<div>
+				<h1>The Mountain Spoke</h1>
+				<p class="subheading">Serving bicyclists in Bozeman, MT.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="sales.html">Sales</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="adventure-tours.html">Adventure Tours</a></li>
+				<li class="active"><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627766206!2d-111.09291154866744!3d45.67227287900151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523585659295" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form>
+				<fieldset>
+					<legend><span>Contact us!</span></legend>
+					<label><span>Full Name:</span><input name="FullName" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,99} required"></label><br>
+					<label><span>Email:</span><input name="Email" type="email" value="" placeholder="zen@gmail.com" required></label><br>
+					<label><span>Phone Number:</span><input name="PhoneNumber" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required></label><br>
+					<label><span>Zipcode:</span><input name="Zipcode" type="number" value="" placeholder="98467" pattern=[0-9]{5}></label><br>
+					<label><span>Comments:</span></label><br><textarea name="Comments" type="textarea" rows="5" cols="40" value=""></textarea>
+				</fieldset>
+
+				<input type="submit" value="Submit">
+
+			</form>
+		</main>
+
+		<footer>
+			<aside>
+				The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT <br> (123) 999-9999<br> themountainspoke@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+		<script src="scripts/range-number.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sales</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="The Mountain Spoke">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/final-logo.jpg" alt="The site logo">
+			</div>
+			<div>
+				<h1>The Mountain Spoke</h1>
+				<p class="subheading">Serving bicyclists in Bozeman, MT.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li class="active"><a href="sales.html">Sales</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="adventure-tours.html">Adventure Tours</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h2>Mountain Bikes</h2>
+			<div class="grid-container">
+				<figure class="grid-item">
+					<img src="images/db-el-oso-uno.jpg">
+					<figcaption>Diamondback El Oso Uno Fat Bike - 2018</figcaption>
+					<p>$750.00<br><br> Features
+						<br> 73mm wide rims and 32-hole disc hubs<br> 170mm rear hub spacing, will fit tire sizes up to 26 x 5 in.<br> Steel frame<br> Custom rigid steel fork is disc-compatible<br> Shimano Acera 2x9 drivetrain<br> Tektro Novela mechanical disc brakes</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/db-mason-2.jpg">
+					<figcaption>Diamondback Mason 2 27.5+ Bike - 2018</figcaption>
+					<p>$1,300.00<br><br>Features<br>
+
+Aluminum frame<br>148x12mm Boost dropouts and rear thru-axle<br>
+RockShox Judy Gold RL fork<br>120mm of plush travel
+SRAM NX <br>1x11 drivetrain makes for simple and efficient shifting
+SRAM Level T hydraulic disc brakes provide plenty of stopping power, even in mud or rainy conditions
+<br>Tubeless-compatible Diamondback Blanchard 38R wheels and Maxxis 2.8 in. tires</p>
+				</figure>
+
+				<figure class="grid-item">
+					<img src="images/db-release.jpg">
+					<figcaption>Diamondback Release 4C Carbon 27.5 Bike - 2018</figcaption>
+					<p>$3,000.00<br><br>Features<br>
+
+Carbon monocoque frame with Boost 148x12mm Maxle dropout<br>
+Shimano SLX 11-speed single-ring drivetrain<br>generous 46-tooth granny gear<br>
+Fox Float DPS EVOL LV rear shock and Fox 34 Performance Float fork<br>
+KS LEV Si dropper post (with Southpaw remote lever) </p>
+				</figure>
+
+			</div>
+		</main>
+
+		<footer>
+			<aside>
+				The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT <br> (123) 999-9999<br> themountainspoke@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

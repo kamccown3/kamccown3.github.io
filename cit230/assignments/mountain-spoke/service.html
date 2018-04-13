@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Service</title>
+	<meta name="author" content="Kelli McCown">
+	<meta name="description" content="The Mountain Spoke">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div>
+				<img src="images/final-logo.jpg" alt="The site logo">
+			</div>
+			<div>
+				<h1>The Mountain Spoke</h1>
+				<p class="subheading">Serving bicyclists in Bozeman, MT.</p>
+			</div>
+			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+		</header>
+		<!-- site navigation use placeholder references -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="event.html">Event</a></li>
+				<li><a href="sales.html">Sales</a></li>
+				<li class="active"><a href="service.html">Service</a></li>
+				<li><a href="adventure-tours.html">Adventure Tours</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Service</h2><table style="width:100%">
+			<table>
+				<caption>Tune-Ups/Builds</caption>
+  <tr>
+    <th>Basic Tune-Up:</th>
+    <td>$39.99</td>
+  </tr>
+  <tr>
+    <th>Premium Tune-Up:</th>
+    <td>$69.99</td>
+  </tr>
+ <tr>
+    <th>Brake System Tune-Up:</th>
+    <td>$24.99</td>
+  </tr>
+			<tr>
+    <th>Drivetrain Tune-Up:</th>
+    <td>$24.99</td>
+  </tr>
+  <tr>
+    <th>Bike Build:</th>
+    <td>$39.99</td>
+  </tr>			
+</table>
+		</main>
+
+		<footer>
+			<aside>
+				The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT <br> (123) 999-9999<br> themountainspoke@gmail.com
+			</aside>
+			<p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+		<script src="scripts/wu-weather.js"></script>
+		<script>
+			getWeatherData('https://api.wunderground.com/...API KEY.../conditions/q/OR/Springfield.json');
+		</script>
+	</div>
+</body>
+
+</html>
